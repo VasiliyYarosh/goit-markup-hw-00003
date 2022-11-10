@@ -183,28 +183,32 @@ header a:focus {
     align-items: center;
     justify-content: center;
     height: 286px;
-    outline: 2px solid red;
 }
 
 .main-list {
     display: flex;
     justify-content: center;
+    height: 90px;
     width: 1170px;
+    padding: 0px;
     align-items: center;
-    outline: 2px solid red;
 }
 
 .main-ithem {
     display: flex;
     flex-direction: column;
     align-items: left;
-    outline: 2px solid red;
+
 }
 
 .main-ithem:not(:last-child) {
     margin-right: 50px;
+    
 }
 
+.main-ithem:first-child {
+    margin-left: 0px;
+}
 
 .main-ithem-haeder {
     font-weight: 700;
@@ -233,36 +237,128 @@ header a:focus {
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
 
+.about-container {
+    margin-bottom: 187px;
+}
+
+.about-section { 
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    height: 388px;
+    justify-content: center;
+}
+
 .header-about {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 57px;
+}
+
+.style-list-fspg {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    padding: 0px;
+}
+
+.style-ithem-fspg:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+/* ///////////////////////////////////////////////////////Наша команда/////////////////////////////////////////////////////////////////////// */
+
+.team-container {
+    height: 470px;
+    margin-bottom: 92px;
+
+}
+.team-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-about {
+    display: flex;
+
+}
+
+
+.team-list {
+    display: flex;
+    width: 1170px;
+    height: 368px;
+    padding: 0px;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+
+        width: 270px;
+        height: 368px;
+        left: 215px;
+        top: 1632px;
+        background: #FFFFFF;
+        /* material shadow v1 */
+
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+    margin-bottom: 29px;
 }
 
 .ithem-team-header {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 13px;
+
 }
 
 .ithem-profession {
+    display: flex;
+    justify-content: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+
 }
 
 
 
 /*-----------------------------------------------------------Portfolio------------------------------------------------------------*/
+
+.portfolio-main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 49px;
+}
+
 .style-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -286,11 +382,57 @@ header a:focus {
 }
 
 .orient-btn {
-    display: inline-block;
+   list-style: none; 
+}
+
+.style-btn {
+    display: flex;
+    padding: 8px 23px;
+    background-color: #F5F4FA;
+    border: #F5F4FA;
+    border-radius: 4px;
+}
+
+.style-btn:hover {
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: white;
+}
+
+.orient-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+/* /////////////////////////////////////////// */
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
 }
 
 
+
+
+.style-ithem-portf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 370;
+    height: 404px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    list-style-type: none;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+
 .products-header {
+    margin-bottom: 20px;
+    margin-left: 22px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -298,7 +440,12 @@ header a:focus {
     color: #212121;
 }
 
+.img-item-about {
+    /* margin-bottom: 30px; */
+}
 .about-product {
+    margin-bottom: 20px;
+    margin-left: 22px;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -306,9 +453,6 @@ header a:focus {
     color: #757575;
 }
 
-.style-ithem-portf {
-    list-style-type: none;
-}
 
 .style-ithem-fspg {
     list-style-type: none;
@@ -316,8 +460,33 @@ header a:focus {
 
 /*--------------------------------------------------------FOOTER---------------------------------------------------------------------*/
 
-.footer {
+.footer-container {
     background-color: #2F303A;
+    margin: 0px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 252px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+
+.footer-logo {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.logo-studio-footer {
+    color: white;
+}
+
+.footer-list {
+    padding: 0px;
 }
 
 .footer a {
@@ -340,7 +509,10 @@ header a:focus {
 
 
 .style-footer {
+    margin-left: 15px;
+    margin-bottom: 10px;
     list-style-type: none;
+
 }
 
 .footer-href {
